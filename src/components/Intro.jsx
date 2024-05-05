@@ -38,7 +38,7 @@ const Intro = () => {
             </div>
             <div className="right-content">
                 <h1>Welcome!</h1>
-                <p>Selamat datang di dunia kreasi digital saya! Saya adalah <span>Fikramul Bizli</span>, seorang pengembang aplikasi mobile, pengembang web, dan ahli dalam desain UI/UX. Dengan fokus saya yang mendalam pada pengembangan <span>perangkat lunak mobile</span>, saya siap membawa ide-ide inovatif menjadi kenyataan di ujung jari Anda.</p>
+                <p>Welcome to my digital creative world! I am <span>Fikramul Bizli</span>, a mobile app developer, web developer, and UI/UX design. With my deep focus on mobile software development, I am ready to turn innovative ideas into reality at your fingertips</p>
             </div>
             <div className="bottom-right-image">
                 <img src={astronot} alt="Bottom Right Image" />
