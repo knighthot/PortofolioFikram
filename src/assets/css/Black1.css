@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   text-align: left;
-  background: linear-gradient(to bottom, #000000 95%, #9767BB );
+  background: black;
   width: 100vw; /* Memastikan kontainer memenuhi seluruh lebar layar */
   height: 100vh; /* Memastikan kontainer memenuhi seluruh tinggi layar */
   display: flex;
