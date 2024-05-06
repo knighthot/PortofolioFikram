@@ -5,6 +5,7 @@ import { faCaretRight, faCaretLeft } from '@fortawesome/free-solid-svg-icons';
 import projectimg from '../assets/image/project.png';
 import sipedina from '../assets/image/sipedina.png';
 import ttg from '../assets/image/ttg.jpg';
+import doktor from '../assets/image/astronot.png';
 const Project = () => {
     // Daftar gambar yang akan ditampilkan
     const images = [
@@ -34,15 +35,17 @@ const Project = () => {
     return (
         <div className="container-project">
             <div className="project-background-top"></div>
-            <div className='project-background-bottom '></div>
+            <div className="project-background-bottom"></div>
             <div className="project-content">
                 <h2>explore my projects</h2>
+                <div className="project-bottom-right-image">
+                <img src={doktor} alt="Bottom Right Image" />
+            </div>
                 <div className="project-image">
                     <img src={projectimg} alt="Project Image" />
                     <img src={images[currentIndex].src} alt="Project Image" />
                     <div className="image-info">{images[currentIndex].info}</div>
                     <button className="button" onClick={() => window.location.href = images[currentIndex].link}>Lihat Detail</button>
-                   
                 </div>
             </div>
             

@@ -31,16 +31,16 @@ const Loading = () => {
 
     return (
         <div className={`containerloading ${showSplash ? 'show' : 'hide'}`}>
-    <section class="loading-data">
+    <section className="loading-data">
         <h1>Initializing world</h1>
-  <h2 class="loading-text text-center text-uppercase">
-    <span class="char">.</span>
-    <span class="char">.</span>
-    <span class="char">.</span>
-    <span class="char">.</span>
-    <span class="char">!</span>
-    <span class="char">!</span>
-    <span class="char">!</span>
+  <h2 className="loading-text text-center text-uppercase">
+    <span className="char">.</span>
+    <span className="char">.</span>
+    <span className="char">.</span>
+    <span className="char">.</span>
+    <span className="char">!</span>
+    <span className="char">!</span>
+    <span className="char">!</span>
   </h2>
 </section>
             {/* Stars */}
