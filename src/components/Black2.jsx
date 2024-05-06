@@ -48,12 +48,12 @@ const Black1 = () => {
             <div className="star" style={{ top: `${getRandomPosition()}%`, left: `${getRandomPosition()}%` }}></div>
             <p className="center-text-black2">congratulations</p>
             <p className="center-text-black2" id='small-font'>you have cleared all the levels !!you can go back to any level you wantor contact me for work or maybe we can have a cup of coffee and discuss about more games !! </p>
-            <button className="download-button" onClick={() => window.location.href = "https://drive.google.com/drive/folders/1McG-lKd0tibRqroixRfYPr0HK4EkWdnZ?usp=sharing"}>
+            {/* <button className="download-button" onClick={() => window.location.href = "https://drive.google.com/drive/folders/1McG-lKd0tibRqroixRfYPr0HK4EkWdnZ?usp=sharing"}>
     Download CV
 </button>
 <Link to="/">
     <button className="download-button" id="back">Back to Maingate</button>
-</Link>
+</Link> */}
 
         </div>
     );
