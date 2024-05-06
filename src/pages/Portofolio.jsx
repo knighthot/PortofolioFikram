@@ -12,7 +12,7 @@ const Portofolio = () => {
       <Black1 />
       <Skill/>
       <Project/>
-      {/* <Black2 /> */}
+      <Black2 />
       <Contact/>
     </div>
   );
