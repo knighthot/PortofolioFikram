@@ -17,7 +17,8 @@
     color: white;
     border: none;
     position: absolute;
-    left: 45vw; /* Sesuaikan dengan jarak yang diinginkan */
+    left: 50%; /* Atur agar tombol tetap berada di tengah */
+    transform: translateX(-50%); /* Koreksi posisi tombol */
     bottom: 50px; /* Sesuaikan dengan jarak yang diinginkan */
     padding: 10px 20px;
     border-radius: 5px;
@@ -29,8 +30,9 @@
 }
 
 #back{
-    left: 43.5vw;
-    bottom: 10px;
+    left: 50%; /* Atur agar tombol tetap berada di tengah */
+    transform: translateX(-50%); /* Koreksi posisi tombol */
+    bottom: 0.5vw;
 }
 
 .download-button:hover {
@@ -103,13 +105,15 @@
 
     .download-button {
        
-    left: 35vw; /* Sesuaikan dengan jarak yang diinginkan */
-    bottom: 50vw; 
+        left: 50%; /* Atur agar tombol tetap berada di tengah */
+        transform: translateX(-50%); 
+        bottom: 80vw;
     }
 
     #back{
-        left: 28vw;
-        bottom: 35vw;
+        left: 50%; /* Atur agar tombol tetap berada di tengah */
+        transform: translateX(-50%); 
+        bottom: 65vw;
     }
     #small-font{
         font-size: 11px;
