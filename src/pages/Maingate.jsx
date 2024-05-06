@@ -1,9 +1,12 @@
 import React, { useEffect,useState } from 'react';
 import  '../assets/css/App.css';
 import {useNavigate } from 'react-router-dom';
-const SocialLink = ({ href, alt }) => (
+import facebook from '../assets/image/facebook.png';
+import ig from '../assets/image/ig.png';
+import inimg from '../assets/image/in.png';
+const SocialLink = ({ href, alt, src }) => (
     <a href={href} >
-        <img src={`https://placehold.co/30x30`} alt={alt} />
+        <img src={src} alt={alt} />
     </a>
 );
 
@@ -28,9 +31,9 @@ const Maingate = () => {
                 start
             </button>
             <div className="space">
-                <SocialLink href="#" alt="Facebook" />
-                <SocialLink href="#" alt="Instagram" />
-                <SocialLink href="#" alt="LinkedIn" />
+            <SocialLink href="https://www.facebook.com/profile.php?id=100012872178615" src={facebook} alt="Facebook" />
+                    <SocialLink href="www.linkedin.com/in/fikramul-bizli-3731781b1" src={inimg} alt="LinkedIn" />
+                    <SocialLink href="https://www.instagram.com/_kammm30/" src={ig} alt="Instagram" />
             </div>
             </div>
         </div>

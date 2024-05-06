@@ -9,6 +9,28 @@
 
 /* Setelah menambahkan font-face, Anda dapat menggunakannya seperti font lainnya */
 
+/* Gaya tombol Download CV */
+/* Gaya tombol Download CV */
+.download-button {
+    
+    background-color: #8E32B3;
+    color: white;
+    border: none;
+    position: absolute;
+    left: 43vw; /* Sesuaikan dengan jarak yang diinginkan */
+    bottom: 50px; /* Sesuaikan dengan jarak yang diinginkan */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.download-button:hover {
+    background-color: #6A2383;
+}
+
+
 
 .containerblack1 {
   margin: 0;
@@ -44,6 +66,7 @@
     position: absolute;
     left: 30%;
     font-size: 50px;
+    margin-top: -5vw;
     font-weight: bold;
     z-index: 2;
     font-family: "MyFont", sans-serif;
@@ -56,7 +79,7 @@
 #small-font{
     font-size: 30px;
     left: 20%;
-    top:25rem;
+    top:30rem;
     width: 60%;
     text-align: center;
 }
@@ -70,7 +93,13 @@
         left: 32vw;
     }
 
-   
+    .download-button {
+       
+        margin-top: 40vw; /* Ubah nilai margin-top sesuai kebutuhan Anda */
+        
+        margin-left: 35vw;
+        text-decoration: none !important;
+    }
     #small-font{
         font-size: 11px;
         top: 50vw;

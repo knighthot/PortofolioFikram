@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
+@font-face {
+    font-family: "MyFont";
+    src: url("../fonts/joystix/joystix monospace.otf") format("opentype");
+    /* Menetapkan path menuju file font dan formatnya */
+}
+
+
+.container-contact {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    background: linear-gradient(to bottom, #8E32B3 10%, #FFB2DD);
+    width: 100vw; /* Memastikan kontainer memenuhi seluruh lebar layar */
+    height: 100vh; /* Memastikan kontainer memenuhi seluruh tinggi layar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.background-top-contact {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../image/awanungu.png'); /* Ganti dengan path gambar yang sesuai */
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.social-media-icons {
+    position: absolute;
+   bottom: 15vw;
+    right: 24vw;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+}
+
+.social-media-icons a {
+    margin-bottom: 10px;
+}
+
+.social-media-icons img {
+    width: 50px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+    height: auto;
+    border-radius: 50%; /* Agar ikon berbentuk bulat */
+    transition: transform 0.3s ease; /* Efek hover */
+}
+
+.social-media-icons img:hover {
+    transform: scale(1.1); /* Perbesar ikon saat dihover */
+}
+
+.image-text-contact {
+    position: absolute;
+    top: -5vw; /* Sesuaikan dengan posisi teks di atas gambar */
+    left: 25%; /* Pusatkan teks secara horizontal */
+    transform: translateX(-50%);
+    font-family: "MyFont", sans-serif;
+    background: -webkit-linear-gradient(#eee, #FEB0DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     background-clip: text;
+    font-size: 35px; /* Ukuran teks */
+}
+
+
+.email-form {
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 40vw;
+    margin-top: 5vw;
+    max-width: 400px;
+    width: 100%;
+    z-index: 5;
+}
+
+.email-form input,
+.email-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.email-form textarea {
+    height: 100px;
+}
+
+.email-form input {
+    height: 60px;
+}
+
+.email-form button {
+    background-color: #8E32B3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    width: 100%;
+}
+
+.email-form button:hover {
+    background-color: #6A2383;
+}
+
+
+.bottom-right-image-contact {
+    width: 50%;
+}
+
+
+.bottom-right-image-contact img {
+    width: 20%;
+}
+
+.background-top-contact,
+.background-image-contact
+ {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bottom-right-image-contact {
+    position: absolute;
+    bottom: 5vw;
+    right: -18vw;
+    z-index: 5;
+
+}
+
+.center-image-contact {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 22%;
+    width: 100%;
+    z-index: 4;
+    margin-top: 5vw;
+}
+
+.center-image-contact img {
+    width: 50%;
+  
+}
+.top-left-image-contact {
+    position: absolute;
+    top: 10vw;
+    left: 18vw;
+    rotate: -25deg;
+    z-index: 5;
+}
+
+.ufo {
+  
+    animation: float 3s ease-in-out infinite; /* Menggunakan animasi float */
+}
+
+.astronot {
+   
+    animation: float 3s ease-in-out infinite; /* Menggunakan animasi float */
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(5px, 5px);
+    }
+}
+
+
+/* Responsiveness for screens up to 768px */
+@media screen and (max-width: 768px) {
+    .background-bottom-contact {
+        top: 100vw;
+    }
+
+   
+    .top-left-image-contact {
+        top: 70vw;
+        left: 1vw;
+        rotate: -25deg;
+        z-index: 5;
+    }
+
+    .top-left-image-contact img{
+       width: 40%;
+    }
+    .image-text-contact {
+        top: -40vw; /* Sesuaikan dengan posisi teks di atas gambar */
+        left: 50%; /* Pusatkan teks secara horizontal */
+        font-size:20px; /* Ukuran teks */
+    }
+    .center-image-contact {
+      margin-left: 0;
+    }
+    .center-image-contact img {
+        width: 80%;
+       margin-left: 5vw;
+      
+    }
+
+    .email-form {
+   
+       padding: 5px;
+        max-width: 200px;
+        width: 40%;
+        margin-left:30vw;
+        margin-top: -10vw;
+    }
+
+    .bottom-right-image-contact {
+        bottom: -18vw;
+      
+        left: 0;
+        z-index: 8;
+    }
+
+    .bottom-right-image-contact img {
+        width: 20%;
+    }
+
+
+.email-form input,
+.email-form textarea {
+    width: 100%;
+  
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+
+.email-form input{
+    height: 30px;
+}
+.email-form textarea {
+    height: 70px;
+}
+
+
+
+.social-media-icons {
+   
+    top: 85vw;
+    right:5vw;
+    
+   
+    z-index: 5;
+}
+
+.social-media-icons img {
+    width: 35px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+    height: auto;
+    border-radius: 50%; /* Agar ikon berbentuk bulat */
+    transition: transform 0.3s ease; /* Efek hover */
+}
+
+.email-form button {
+  
+   
+    padding: 5px 10px;
+   
+    width: 100%;
+}
+
+}
+/* Responsiveness for screens up to 480px */
+@media screen and (max-width: 480px) {
+    .background-bottom-contact {
+        top: 102vw;
+    }
+
+    .email-form {
+   
+        padding: 5px;
+         max-width: 200px;
+         width: 40%;
+         margin-left:35vw;
+         margin-top: -10vw;
+     }
+
+
+    .bottom-right-image-contact {
+        bottom: 85vw;
+    
+    }
+
+    .bottom-right-image-contact img {
+        width: 30%;
+    }
+}
+
+
+.email-form input,
+.email-form textarea {
+    width: 100%;
+    padding: 2px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+
+/* Responsiveness for screens up to 320px */
+@media screen and (max-width: 380px) {
+    .background-bottom-contact {
+        top: 94vw;
+    }
+
+   
+    
+    .bottom-right-image-contact img {
+        width: 20%;
+    }
+}
