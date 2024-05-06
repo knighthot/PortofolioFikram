@@ -96,7 +96,7 @@
     .download-button {
        
     left: 35vw; /* Sesuaikan dengan jarak yang diinginkan */
-    bottom: 80vw; 
+    bottom: 50vw; 
     }
     #small-font{
         font-size: 11px;
@@ -126,4 +126,9 @@
 
     
     
+    .download-button {
+       
+        left: 35vw; /* Sesuaikan dengan jarak yang diinginkan */
+        bottom: 50vw; 
+        }
 }
