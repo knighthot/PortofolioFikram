@@ -13,7 +13,7 @@ const Portofolio = () => {
       <Skill/>
       <Project/>
       <Black2 />
-      <Contact/>
+      {/* <Contact/> */}
     </div>
   );
 }
