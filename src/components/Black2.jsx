@@ -13,7 +13,7 @@ const Black1 = () => {
 
 
     return (
-        <div className="containerblack1">
+        <div className="containerblack2">
              
         
             <div className="star" style={{ top: `${getRandomPosition()}%`, left: `${getRandomPosition()}%` }}></div>

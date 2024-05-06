@@ -39,20 +39,21 @@
 
 
 
-.containerblack1 {
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  background: black;
-  width: 100vw; /* Memastikan kontainer memenuhi seluruh lebar layar */
-  height: 100vh; /* Memastikan kontainer memenuhi seluruh tinggi layar */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
+.containerblack2 {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Menengahkan secara horizontal */
+    position: relative;
 }
 
-.containerblack1::before {
+.containerblack2::before {
   content: ''; /* Menambahkan elemen pseudo before */
   position: absolute; /* Menetapkan posisi absolut */
   top: 0;
