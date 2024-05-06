@@ -55,7 +55,7 @@
 
 .containerblack2::before {
   content: ''; /* Menambahkan elemen pseudo before */
-  position: absolute; /* Menetapkan posisi absolut */
+  
   top: 0;
   left: 0;
   width: 100%;
