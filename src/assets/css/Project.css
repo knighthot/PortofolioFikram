@@ -35,8 +35,6 @@
 
 .project-content {
     position: relative;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 3rem;
@@ -149,8 +147,7 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 1;
-    z-index: 4;
+  
 }
 
 .project-bottom-right-image {
@@ -165,9 +162,7 @@
 }
 
 .project-bottom-right-image img{
-   width: 50%;
-  
-    
+   width: 50%; 
 }
 
 @media screen and (max-width: 480px) {
@@ -217,14 +212,7 @@
    
  }
 .project-background-bottom {
-    position: absolute;
+  
     top: 28vw;
-    width: 100%;
-    height: 100%;
-    background-image: url('../image/tanah.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 1;
-    z-index: 4;
+   
 }
