@@ -98,6 +98,10 @@ body {
     animation: astronot ease-in 3s infinite;
 }
 
+.project-background-top h1 p{
+  margin-top: -20rem;
+}
+
 .bottom-right-image img {
     width: 20%;
 }

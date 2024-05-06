@@ -1,0 +1,229 @@
+.container-project {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    background: linear-gradient(to bottom, #8E32B3 10%, #FFB2DD);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.project-background-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-image: url('../image/awanungu.png'); /* Ganti dengan path gambar yang sesuai */
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+
+
+
+.project-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    text-align: center; /* Pusatkan teks secara horizontal */
+    color: white; /* Ganti warna teks sesuai kebutuhan */
+}
+
+.project-content h2 {
+    font-size: 4rem; /* Sesuaikan ukuran font sesuai kebutuhan */
+    margin-bottom: 15rem; /* Sesuaikan jarak antara teks */
+    font-family: "Aldrich", sans-serif;
+    text-shadow: 2px 2px 4px #5D0A9D;
+}
+
+.image-info {
+    position: absolute;
+    bottom: 20vw;
+    left: 62%;
+    transform: translateX(-50%);
+    color: #5D0A9D;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    z-index: 5;
+    width: 20%;
+    text-align: left;
+    font-family: "Aldrich", sans-serif;
+   
+}
+
+.button {
+    background-color: #8E32B3;
+    color: white;
+    border: none;
+    position: absolute;
+    left: 56vw; /* Sesuaikan dengan jarak yang diinginkan */
+    bottom: 250px; /* Sesuaikan dengan jarak yang diinginkan */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.button:hover {
+    background-color: #6A2383;
+}
+
+
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow-left {
+    left: 15vw;
+    top: 20vw
+}
+
+.arrow-right {
+    right: 15vw;
+    top: 20vw
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.project-image {
+    position: relative; /* Membuat kontainer gambar relatif */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image img {
+    max-width: 50%; 
+    height: auto; 
+    border-radius: 10px;
+    position: relative; 
+    top : -10vw;
+    z-index: 5;
+}
+
+.project-image img:nth-child(2) {
+    position: absolute; /* Membuat gambar fikram menjadi absolut */
+     /* Atur posisi vertikal ke bagian atas */
+    left: 28vw; /* Atur posisi horizontal ke bagian kiri */
+    top:-6.5vw;
+    z-index: 10; /* Menempatkan gambar fikram di atas (layer yang lebih tinggi) dari gambar projectimg */
+    width: 20%;
+}
+
+.project-background-bottom {
+    position: absolute;
+    top: 20vw;
+    width: 100%;
+    height: 100%;
+    background-image: url('../image/tanah.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    z-index: 4;
+}
+
+@media screen and (max-width: 480px) {
+    .project-content h2 {
+        font-size: 1.5rem;
+        margin-top: -5rem; /* Sesuaikan jarak antara teks */
+    }
+
+    .image-info {
+        font-size: 0.5rem;
+        font-family: "Aldrich", sans-serif;
+        
+    }
+    
+
+    .project-image img {
+        max-width: 80%; 
+       
+       
+    }
+
+    .project-image img:nth-child(2) {
+      
+        left: 15vw; /* Atur posisi horizontal ke bagian kiri */
+        top:-1vw;
+        width: 30%;
+    }
+
+    .button {
+        left: 65%;
+        transform: translateX(-50%);
+        bottom: 55px; /* Sesuaikan dengan jarak yang diinginkan */
+        font-size: 5px;
+        padding: 5px 10px;
+    }
+}
+
+.project-background-bottom {
+    position: absolute;
+    top: 50vw;
+    width: 100%;
+    height: 100%;
+    background-image: url('../image/tanah.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    z-index: 4;
+}
+
+/* Untuk tablet */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .project-content h2 {
+        margin-bottom: 10rem; /* Sesuaikan jarak antara teks */
+    }
+
+    .button {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 50px; /* Sesuaikan dengan jarak yang diinginkan */
+    }
+}
+
+/* Untuk desktop */
+@media screen and (min-width: 769px) {
+    .project-content h2 {
+            margin-bottom: 15rem; /* Sesuaikan jarak antara teks */
+           
+        
+    }
+
+    .button {
+        left: 56vw; /* Sesuaikan dengan jarak yang diinginkan */
+        bottom: 250px; /* Sesuaikan dengan jarak yang diinginkan */
+    }
+}
