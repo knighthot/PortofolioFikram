@@ -95,10 +95,8 @@
 
     .download-button {
        
-        margin-top: 40vw; /* Ubah nilai margin-top sesuai kebutuhan Anda */
-        
-        margin-left: 35vw;
-        text-decoration: none !important;
+    left: 35vw; /* Sesuaikan dengan jarak yang diinginkan */
+    bottom: 80vw; 
     }
     #small-font{
         font-size: 11px;
