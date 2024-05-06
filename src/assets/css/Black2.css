@@ -17,7 +17,7 @@
     color: white;
     border: none;
     position: absolute;
-    left: 43vw; /* Sesuaikan dengan jarak yang diinginkan */
+    left: 45vw; /* Sesuaikan dengan jarak yang diinginkan */
     bottom: 50px; /* Sesuaikan dengan jarak yang diinginkan */
     padding: 10px 20px;
     border-radius: 5px;
@@ -66,7 +66,7 @@
     position: absolute;
     left: 30%;
     font-size: 50px;
-    margin-top: -5vw;
+    margin-top: 0vw;
     font-weight: bold;
     z-index: 2;
     font-family: "MyFont", sans-serif;
@@ -79,7 +79,7 @@
 #small-font{
     font-size: 30px;
     left: 20%;
-    top:30rem;
+    top:25rem;
     width: 60%;
     text-align: center;
 }
